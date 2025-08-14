@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #0F1A24;
+    background-color: #0c141b;
     color: #EFECEA;
     font-family: "Manrope", sans-serif
 }
@@ -23,14 +23,19 @@ header {
     border-bottom: 1px solid #EFECEA;
 }
 
+header a {
+    text-decoration: none;
+}
+
 .logo {
     display: flex;
     align-items: center;
     font-size: 16px;
+    color: #EFECEA;
 }
 
 .logo img {
-    margin-right: 8px;
+    margin-right: 6px;
 }
 
 nav ul{
