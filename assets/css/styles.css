@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #0c141b;
+    background-color: #111822;
     color: #EFECEA;
     font-family: "Manrope", sans-serif
 }
@@ -20,7 +20,7 @@ body {
 header {
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid #EFECEA;
+    border-bottom: 1px solid rgba(256, 256, 256, 0.8);
 }
 
 header a {
@@ -38,6 +38,10 @@ header a {
     margin-right: 6px;
 }
 
+.logo b {
+    color: rgba(256, 256, 256, 0.8);
+}
+
 nav ul{
     display: flex;
     list-style: none;
@@ -51,6 +55,42 @@ nav ul a{
     padding: 10px;
     border-radius: 12px;
     text-decoration: none;
-    color: #EFECEA;
+    color: rgba(256, 256, 256, 0.8);
     transition: all 0.3s ease;
 }
+
+#contato {
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    width: 45%;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 16px ;
+    margin-bottom: 8px;
+    color: rgba(256, 256, 256, 0.9);
+}
+
+input {
+    background-color: #172633;
+    height: 36px;
+    border-radius: 9px;
+    border: 1px solid #304D69;
+    padding: 4px;
+    margin-bottom: 16px;
+}
+
+    /* 
+    TO DO: 
+    placeholder #8FADCC 
+    centalizar
+    footer
+    div containe -> fazer o forms mais foote caber em 100vh*/
