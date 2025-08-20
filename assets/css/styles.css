@@ -1,3 +1,4 @@
+/* Estilos Gerais */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +7,7 @@
 body {
     background-color: #111822;
     color: #EFECEA;
-    font-family: "Manrope", sans-serif
+    font-family: "Manrope"
 }
 
 .container-top{
@@ -15,6 +16,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.container {
+    width: 80%;
 }
 
 header {
@@ -59,9 +64,67 @@ nav ul a{
     transition: all 0.3s ease;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.icons {
+    width: 64px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.icons a{
+    text-decoration: none;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: #8faecccf;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease-in-out; 
+}
+
+.social-icon:hover {
+    transform: scale(1.1); 
+}
+
+.github-icon path {
+    fill: none;
+    stroke-width: 3px;
+    stroke: #8faecccf; 
+}
+
+.linkedin-icon * {
+    stroke: #8faecccf;  
+    stroke-width: 3px;    
+    fill: none;         
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* Estilos pagina contato*/
+
+.body-contact {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 #contato {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-grow: 1;
 }
 
 .form-container {
@@ -76,11 +139,12 @@ nav ul a{
 label {
     font-size: 16px ;
     margin-bottom: 8px;
-    color: rgba(256, 256, 256, 0.9);
+    color: rgba(256, 256, 256, 0.8);
 }
 
 input {
     background-color: #172633;
+    color: rgba(256, 256, 256, 0.8);
     height: 36px;
     border-radius: 9px;
     border: 1px solid #304D69;
@@ -88,9 +152,34 @@ input {
     margin-bottom: 16px;
 }
 
-    /* 
-    TO DO: 
-    placeholder #8FADCC 
-    centalizar
-    footer
-    div containe -> fazer o forms mais foote caber em 100vh*/
+input::placeholder {
+    color: #8FADCC ;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #8FADCC;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 24px;
+    display: flex;
+    border-radius: 12px;
+    justify-content: center;
+}
+
+.btn button {
+    display: inline-block;
+    padding: 16px 28px;
+    background-color: #3D99F5;
+    color: rgba(256, 256, 256, 0.8);
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.btn button:hover {
+    background-color: #3480cd;
+}
