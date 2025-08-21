@@ -45,6 +45,11 @@ header a {
 
 .logo b {
     color: rgba(256, 256, 256, 0.8);
+    transition: all 0.3s ease;
+}
+
+.logo b:hover {
+    color: rgba(256, 256, 256);
 }
 
 nav ul{
@@ -61,7 +66,12 @@ nav ul a{
     border-radius: 12px;
     text-decoration: none;
     color: rgba(256, 256, 256, 0.8);
-    transition: all 0.3s ease;
+    transition: all 0.2s ease-in-out;
+}
+
+nav ul a:hover {
+    color: rgba(256, 256, 256);
+    transform: scale(1.1);
 }
 
 footer {
@@ -70,7 +80,7 @@ footer {
 }
 
 .icons {
-    width: 64px;
+    width: 44px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 12px;
@@ -86,11 +96,12 @@ footer {
     align-items: center;
     padding: 20px;
     color: #8faecccf;
+    font-size: 12px;
 }
 
 .social-icon {
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
     transition: transform 0.2s ease-in-out; 
 }
 
@@ -112,9 +123,9 @@ footer {
     stroke-linejoin: round;
 }
 
-/* Estilos pagina contato*/
+/* Estilos pagina Contato */
 
-.body-contact {
+.body-flex {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -182,4 +193,57 @@ input:focus {
 
 .btn button:hover {
     background-color: #3480cd;
+}
+
+/* Estilos pagina Portifolio */
+
+#projects {
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+}
+
+.projects-gallery {
+    display: grid;
+    /* Fazer grid*/
+}
+
+.project-card {
+    width: 320px;
+    padding: 18px 12px;
+    border-radius: 20px;       
+    padding: 16px;            
+    transition: all 0.35s ease-in-out; 
+}
+
+.projects-title {
+    display: inline-block;
+    border-bottom: 2px solid rgba(256, 256, 256, 0.8);
+    padding-bottom: 8px;
+    margin-bottom: 32px;
+}
+
+.projects-title span {
+    width: 28px;
+    display: inline-block;
+}
+
+/* Fazer estilo hover - background-color: #172633 + sombra + efeito subir; */
+
+.project-card img {
+    width: 320px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 8px;
+}
+
+.project-name {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.project-desc {
+    font-size: 12px;
+    color: #8FADCC;
 }
