@@ -2,12 +2,13 @@
 * {
     margin: 0;
     padding: 0;
+    scrollbar-width: none;
 }
 
 body {
     background-color: #111822;
     color: #EFECEA;
-    font-family: "Manrope"
+    font-family: "Manrope";
 }
 
 .container-top{
@@ -194,10 +195,18 @@ input:focus, textarea:focus {
     border: none;
     border-radius: 12px;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .btn button:hover {
-    background-color: #3480cd;
+    background: #3480cd;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.btn button:active {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
 }
 
 /* Estilos pagina Portifolio */
@@ -267,11 +276,64 @@ span {
 
 .info {
     display: flex;
+    margin-bottom: 16px;
 }
 
 .info-img img {
     width: 250px;
     height: 450px;
     object-fit: cover;
+    margin-right: 40px;
     border-radius: 24px;
+}
+
+.tech {
+    margin-top: 36px;
+}
+
+.about-tech {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-tech i {
+    transition: all 0.3s ease-in-out
+}
+
+.about-tech i:hover {
+    transform: scale(1.2);
+}
+
+#about-me a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.btn-cv {
+    margin-bottom: 16px;
+    width: 196px;
+    padding: 16px 28px;
+    background: #3D99F5;
+    color: rgba(256, 256, 256, 0.8);
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-cv:hover {
+    background: #3480cd;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.btn-cv:active {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+}
+
+.download-icon {
+    fill: #EFECEA;
 }
